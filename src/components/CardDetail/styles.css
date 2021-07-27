@@ -1,0 +1,29 @@
+.detalles-carta{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: #712FBA;
+    width: 60%;
+    margin: 40px auto;
+    max-width: 700px;
+    min-width: 300px;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.detalles-carta div{
+    margin: 10px;
+}
+
+.detalle-img img{
+    width: 100%;
+    border: 2px solid black;
+}
+
+.detalle-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    font-size: 100%;
+    padding-left: 5px;
+}
