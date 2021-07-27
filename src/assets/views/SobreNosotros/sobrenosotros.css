@@ -1,0 +1,10 @@
+.sobrenosotros>article>h3{
+    color: #712FBA;
+}
+.sobrenosotros{
+    background-color: #78CFFF;
+    height: 350px;
+    display: grid;
+    justify-content: center;
+    font-size: 120%;
+}

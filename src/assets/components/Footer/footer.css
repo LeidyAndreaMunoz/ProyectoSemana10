@@ -1,0 +1,23 @@
+footer{
+    background-color: #712FBA;
+    height: 200px;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 30px;
+    align-items: center;
+}
+a{
+    color: black;
+    font-size: 120%;
+    font-weight: 700;
+}
+.contacto, .socialmedia{
+    display: grid;
+    grid-template-rows: auto;
+}
+img{
+    height: 120px;
+    width: 150px;
+}
