@@ -1,0 +1,45 @@
+header{
+    width: 100%;
+    background-color: #712FBA;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .Header-logo{
+    width: 12%;
+}
+
+header section{
+    margin: 5px;
+}
+
+.Header-logo img{
+    width: 100%;
+    min-height: 30px;
+    min-width: 75px;
+    max-width: 140px;
+    max-height: 50px;
+}
+
+header .Header-login{
+    display: flex;
+}
+
+.Header-login button{
+    margin-left: 8px;
+    height: 30px;
+    border: none;
+    background-color: transparent;
+    margin: 5px;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.Header-login div :hover{
+    background-color: #78CFFF;
+    box-shadow: 2px 2px 5px black;
+    color: black;
+}
