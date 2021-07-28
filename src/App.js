@@ -6,7 +6,7 @@ import Homepage from './views/Homepage';
 function App() {
   return (
     <div className="App">
-      {/* <Header /> */}
+      <Header />
       <Homepage />
       {/* <Footer /> */}
     </div>
