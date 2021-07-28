@@ -4,7 +4,6 @@ function Homepage() {
     return (
         <Carousel />
         <Search />
-        <CardsHome />
     )
 };
 
