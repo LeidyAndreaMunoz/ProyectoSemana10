@@ -1,9 +1,14 @@
+import React from 'react';
+import Carousel from '../../components/Carousel';
+import Search from '../../components/Search';
 import './homepage.css';
 
 function Homepage() {
     return (
-        <Carousel />
-        <Search />
+        <div>
+            <Carousel />
+            <Search />
+        </div>
     )
 };
 
