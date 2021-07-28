@@ -6,10 +6,32 @@ import Homepage from './views/Homepage';
 export default function App() {
   return (
     <div className="App">
-
       <Router>
         <Header />
-        <Homepage />
+        <Switch>
+          <Route path="/results">
+            <Results />
+          </Route>
+          <Route path="/carddetail">
+            <CardDetail />
+          </Route>
+          <Route path="/registerpage">
+            <Registerpage />
+          </Route>
+          <Route path="loginpage">
+            <Loginpage />
+          </Route>
+          <Route path="contactpage">
+            <Contactpage />
+          </Route>
+          <Route path="aboutus">
+            <AboutUs />
+          </Route>
+          <Route path="/">
+            <Homepage />
+          </Route>
+        </Switch>
+        <Footer />
       </Router>
 
     </div>
