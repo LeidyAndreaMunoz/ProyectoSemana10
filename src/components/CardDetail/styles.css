@@ -7,7 +7,6 @@
     max-width: 700px;
     min-width: 300px;
     border-radius: 10px;
-    color: whitesmoke;
 }
 
 .detalles-carta div{
@@ -26,4 +25,13 @@
     align-items: flex-start;
     font-size: 100%;
     padding-left: 5px;
+}
+
+.detalle-text h4{
+    background-color: #78CFFF;
+    padding: 2px;
+    border-radius: 5px;
+    font-weight: 600;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 15px;
 }

@@ -29,6 +29,7 @@ header .Header-login{
 
 .Header-login button{
     margin-left: 8px;
+    padding: 2px;
     height: 30px;
     border: none;
     background-color: transparent;
