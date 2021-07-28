@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from '../../components/Carousel';
 import Search from '../../components/Search';
+import CardsHome from '../../components/cardsHome'
 import './homepage.css';
 
 function Homepage() {
@@ -8,6 +9,7 @@ function Homepage() {
         <div>
             <Carousel />
             <Search />
+            <CardsHome />
         </div>
     )
 };

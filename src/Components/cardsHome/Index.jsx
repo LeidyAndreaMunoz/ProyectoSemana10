@@ -23,10 +23,12 @@ const CardDetail = () => {
     return(
         <>
         {cards ? (
+        <div>
+            <h2>Recomendadas del Mes</h2>
             <div className="cardsContainer">
                 {
                     cards?.data.slice(numbers, numbers+6).map((item) => {
-                        return (
+                        return (    
                         <article className="singleCard">
                             <div className="imgContainer">
                                 <img src={item.card_images[0].image_url} alt="" />
@@ -41,6 +43,7 @@ const CardDetail = () => {
                     })
                 }
             </div>
+        </div>
         ) : <h1 className="loadingLayout">Loading...</h1> }
         </>
     )
