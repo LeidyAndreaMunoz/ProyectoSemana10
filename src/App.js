@@ -1,16 +1,17 @@
+import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import './assets/global.css';
-import Header from './components/Header';
+import Header from './Components/Header';
 import Homepage from './views/Homepage';
 
-function App() {
+export default function App() {
   return (
     <div className="App">
-      <Header />
-      <Homepage />
-      {/* <Footer /> */}
+
+      <Router>
+        <Header />
+        <Homepage />
+      </Router>
+
     </div>
   );
 }
-
-export default App;
