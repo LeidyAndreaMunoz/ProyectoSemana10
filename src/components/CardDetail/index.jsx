@@ -3,7 +3,7 @@ import './styles.css';
 
 export default function CardDetail() {
 
-    let cartas = GetData("Tornado Dragon");
+    let cartas = GetData("Armed Dragon Catapult Cannon");
 
     return cartas.length === 0 ? <h1>Loading...</h1> : (
         <section className="detalles-carta">
