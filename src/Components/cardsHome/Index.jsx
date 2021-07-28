@@ -1,5 +1,5 @@
-import {React, useState, useEffect} from 'react'
-import './Cards.css';
+import {React, useState, useEffect} from 'react';
+import './cards.css';
 
 const CardDetail = () => {
     const [cards, setCards] = useState(null)
