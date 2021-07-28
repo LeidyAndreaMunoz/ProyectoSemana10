@@ -18,14 +18,14 @@ export default function Footer(){
             <p>Tipo</p>
             <p>Efecto</p>
         </div>
-        <div>
+        <div className="logoyugi">
             <img src={img1} alt="logo" />
         </div>
-        <div class="socialmedia">
+        <div className="socialmedia">
             <h1>Social Media</h1>
             <img src={img2} alt="socialmedia" />
         </div>
-        <div class="contacto">
+        <div className="contacto">
             <a href="./">Contactenos</a>
             <a href="./">Sobre Nosotros</a>
         </div>
