@@ -1,7 +1,8 @@
 import React from 'react';
-import Carousel from '../../components/Carousel';
-import Search from '../../components/Search';
-import CardsHome from '../../components/cardsHome';
+import './homepage.css';
+import Carousel from '../../Components/Carousel';
+import Search from '../../Components/Search';
+import CardsHome from '../../Components/cardsHome';
 
 function Homepage() {
     return (

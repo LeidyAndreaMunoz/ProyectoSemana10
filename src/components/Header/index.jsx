@@ -10,10 +10,10 @@ export default function Header() {
             </section>
             <section className="Header-login">
                 <div>
-                    <button type="button">Registrarse</button>
+                    <Link to ="/registerpage"><button type="button">Registrarse</button></Link>
                 </div>
                 <div>
-                    <button type="button">Iniciar Sesion</button>
+                    <Link to ="/loginpage"><button type="button">Iniciar Sesion</button></Link>
                 </div>
             </section>
         </header>

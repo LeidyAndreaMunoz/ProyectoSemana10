@@ -1,7 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Header from './components/Header';
+import Header from './Components/Header';
 import Homepage from './views/Homepage';
+import Registerpage from './views/Registerpage';
+import Loginpage from './views/Loginpage';
+import Contactpage from './views/Contactpage';
+
 
 export default function App() {
   return (
@@ -9,31 +13,30 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
-          <Route path="/results">
+          {/* <Route path="/results">
             <Results />
-          </Route>
-          <Route path="/carddetail">
+          </Route> */}
+          {/* <Route path="/carddetail">
             <CardDetail />
-          </Route>
+          </Route> */}
           <Route path="/registerpage">
             <Registerpage />
           </Route>
-          <Route path="loginpage">
+          <Route path="/loginpage">
             <Loginpage />
           </Route>
-          <Route path="contactpage">
+          <Route path="/contactpage">
             <Contactpage />
           </Route>
-          <Route path="aboutus">
+          {/* <Route path="aboutus">
             <AboutUs />
-          </Route>
+          </Route> */}
           <Route path="/">
             <Homepage />
           </Route>
         </Switch>
-        <Footer />
+        {/* <Footer /> */}
       </Router>
-
     </div>
   );
 }
