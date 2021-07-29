@@ -7,6 +7,8 @@ import Loginpage from './views/Loginpage';
 import Contactpage from './views/Contactpage';
 import AboutUs from './views/SobreNosotros';
 import Footer from './Components/Footer';
+import Results from './views/Results';
+import CardDetailView from './views/CardDetailView';
 
 
 export default function App() {
@@ -15,12 +17,9 @@ export default function App() {
       <Router>
         <Header />
         <Switch>
-          {/* <Route path="/results">
-            <Results />
-          </Route> */}
-          {/* <Route path="/carddetail">
-            <CardDetail />
-          </Route> */}
+          <Route path="/carddetail">
+            <CardDetailView />
+          </Route>
           <Route path="/registerpage">
             <Registerpage />
           </Route>
@@ -32,6 +31,9 @@ export default function App() {
           </Route>
           <Route path="/aboutus">
             <AboutUs />
+          </Route>
+          <Route path="/results">
+            <Results />
           </Route>
           <Route path="/">
             <Homepage />

@@ -1,4 +1,4 @@
-import GetData from '../../Utils/getData';
+import GetData from '../../utils/getData';
 import './styles.css';
 
 export default function CardDetail() {
