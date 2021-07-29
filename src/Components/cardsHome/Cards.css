@@ -1,3 +1,13 @@
+@media (max-width: 1050px){
+  .mainContainer{
+      padding-bottom: 10%;
+  }
+}
+@media (max-width: 690px){
+  .mainContainer{
+      padding-bottom: 70%;
+  }
+}
 h2 {
   text-align: center;
   color: white;
@@ -6,13 +16,13 @@ h2 {
 }
 .cardsContainer {
     display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(240px,1fr));
+    grid-template-columns:repeat(auto-fill, 19em);
+    justify-content: center;
     gap: 2%;
-    padding: 20px;
+    padding-bottom: 30px;
     background-color: black;
-    max-width: 768px;
+    width: 90%;
     margin: 0 auto;
-    padding: 1em 0;
 }
 .singleCard {
   display: flex;

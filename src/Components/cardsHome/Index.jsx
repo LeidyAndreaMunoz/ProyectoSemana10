@@ -1,5 +1,5 @@
 import {React, useState, useEffect} from 'react';
-import './cards.css';
+import './Cards.css';
 
 const CardDetail = () => {
     const [cards, setCards] = useState(null)
@@ -23,7 +23,7 @@ const CardDetail = () => {
     return(
         <>
         {cards ? (
-        <div>
+        <div className="cardSection">
             <h2>Recomendadas del Mes</h2>
             <div className="cardsContainer">
                 {

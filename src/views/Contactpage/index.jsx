@@ -1,9 +1,10 @@
 import React from 'react';
 import Contact from '../../Components/ContactForm/Index';
+import './contactpage.css'
 
 function Contactpage() {
     return (
-        <div>   
+        <div className="contactSection">   
             <Contact/>
         </div>
     )

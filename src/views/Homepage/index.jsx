@@ -2,11 +2,11 @@ import React from 'react';
 import './homepage.css';
 import Carousel from '../../Components/Carousel';
 import Search from '../../Components/Search';
-import CardsHome from '../../Components/cardsHome';
+import CardsHome from '../../Components/cardsHome/Index';
 
 function Homepage() {
     return (
-        <div>
+        <div className="mainContainer">
             <Carousel />
             <Search />
             <CardsHome />
