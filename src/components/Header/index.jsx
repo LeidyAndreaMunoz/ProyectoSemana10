@@ -13,7 +13,7 @@ export default function Header() {
                     <Link to ="/registerpage"><button type="button">Registrarse</button></Link>
                 </div>
                 <div>
-                    <Link to ="/loginpage"><button type="button">Iniciar Sesion</button></Link>
+                    <Link to ="/loginpage"><button type="button">Iniciar Sesión</button></Link>
                 </div>
             </section>
         </header>

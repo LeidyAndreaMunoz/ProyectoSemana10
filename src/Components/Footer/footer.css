@@ -9,14 +9,20 @@ footer{
     color: white;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     padding: 0px 30px;
     align-items: center;
+    width: 100%;
+    margin-top: 30px;
 }
 a{
     color: white;
     font-size: 120%;
     font-weight: 700;
+    text-decoration: none;
+}
+ul li {
+    list-style: none;
 }
 .socialmedia>img{
     height: 120px;

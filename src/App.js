@@ -5,6 +5,8 @@ import Homepage from './views/Homepage';
 import Registerpage from './views/Registerpage';
 import Loginpage from './views/Loginpage';
 import Contactpage from './views/Contactpage';
+import AboutUs from './views/SobreNosotros';
+import Footer from './Components/Footer';
 
 
 export default function App() {
@@ -28,14 +30,14 @@ export default function App() {
           <Route path="/contactpage">
             <Contactpage />
           </Route>
-          {/* <Route path="aboutus">
+          <Route path="/aboutus">
             <AboutUs />
-          </Route> */}
+          </Route>
           <Route path="/">
             <Homepage />
           </Route>
         </Switch>
-        {/* <Footer /> */}
+        <Footer />
       </Router>
     </div>
   );
