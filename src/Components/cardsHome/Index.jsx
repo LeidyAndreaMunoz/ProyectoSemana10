@@ -1,4 +1,5 @@
 import {React, useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 import './cards.css';
 
 const CardDetail = () => {
@@ -29,16 +30,18 @@ const CardDetail = () => {
                 {
                     cards?.data.slice(numbers, numbers+6).map((item) => {
                         return (    
-                        <article className="singleCard">
-                            <div className="imgContainer">
-                                <img src={item.card_images[0].image_url} alt="" />
-                            </div>
-                            <div className="textContainer">
-                                <h4>{item.name} ({item.type})</h4>
-                                <h6>Ataque: {item.atk || '0'} <br /> Defensa: {item.def || '0'}</h6>
-                                <h6>Arquetipo: {item.archetype || 'No presenta'} </h6>
-                            </div>
-                        </article>
+                        <Link to ="/carddetail"> 
+                            <article className="singleCard" onClick={() => localStorage.setItem('cardId', item.id) } >
+                                <div className="imgContainer">
+                                    <img src={item.card_images[0].image_url} alt="" />
+                                </div>
+                                <div className="textContainer">
+                                    <h4>{item.name} ({item.type})</h4>
+                                    <h6>Ataque: {item.atk || '0'} <br /> Defensa: {item.def || '0'}</h6>
+                                    <h6>Arquetipo: {item.archetype || 'No presenta'} </h6>
+                                </div>
+                            </article>
+                        </Link>
                         )
                     })
                 }

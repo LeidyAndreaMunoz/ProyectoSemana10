@@ -1,25 +1,44 @@
-import GetData from '../../utils/getData';
+import { useEffect, useState } from 'react';
 import './styles.css';
 
-export default function CardDetail() {
 
-    let cartas = GetData("Red Dragon Ninja");
+export default function CardDetail()  {
 
-    return cartas.length === 0 ? <h1>Loading...</h1> : (
-        <section className="detalles-carta">
-            <div className="detalle-img">
-                <img src={cartas.data[0].card_images[0].image_url} alt="" />
-            </div>
-            <div className="detalle-text">
-                <h4>Nombre: {cartas.data[0].name}</h4>
-                <h4>Tipo: {cartas.data[0].type}</h4>
-                <h4>Ataque: {cartas.data[0].atk || 0}</h4>
-                <h4>Defensa: {cartas.data[0].def || 0}</h4>
-                <h4>Nivel: {cartas.data[0].level || 0}</h4>
-                <h4>Raza: {cartas.data[0].race}</h4>
-                <h4>Atributo: {cartas.data[0].attribute || "Ninguno"}</h4>
-                <h4>Arquetipo: {cartas.data[0].archetype || "Ninguno"}</h4>
-            </div>
-        </section>
+    const [card, setCard] = useState(null)
+    let idCard = localStorage.getItem("cardId");
+    useEffect(() => {
+        localStorage.setItem('userSearch', '');
+        fetch(`https://db.ygoprodeck.com/api/v7/cardinfo.php?id= ${idCard}`)
+            .then((response) => response.json())
+            .then((data) => {
+                console.log("b", data.data[0])
+                setCard(data.data[0]);
+            })
+    }, [])
+
+
+    return(
+        <>
+        {card ? (
+        <>
+            <section className="detalles-carta">
+                <div className="detalle-img">
+                    <img src={card &&  card?.card_images[0]?.image_url} alt="" />
+                </div>
+                <div className="detalle-text">
+                    <h4>Nombre: {card?.name}</h4>
+                    <h4>Tipo: {card?.type}</h4>
+                    <h4>Ataque: {card?.atk || 0}</h4>
+                    <h4>Defensa: {card?.def || 0}</h4>
+                    <h4>Nivel: {card?.level || 0}</h4>
+                    <h4>Raza: {card?.race}</h4>
+                    <h4>Atributo: {card?.attribute || "Ninguno"}</h4>
+                    <h4>Arquetipo: {card?.archetype || "Ninguno"}</h4>
+                </div>
+            </section>
+         </>
+        ) : <h1>Loading...</h1>}
+        </>
     )
+
 }

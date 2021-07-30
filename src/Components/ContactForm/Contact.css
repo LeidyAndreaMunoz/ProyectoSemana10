@@ -65,3 +65,9 @@ button:hover{
     background:#78788c;
     color:#fff
 }
+
+@media (max-width: 500px) {
+    .contactContainer{
+        width: 80%;
+    }
+}

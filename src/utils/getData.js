@@ -8,7 +8,6 @@ export default function GetData(carta) {
             .then((response) => response.json())
             .then((data) => {
                 setCartas(data);
-                console.log(cartas);
             });
     }, []);
     return cartas;

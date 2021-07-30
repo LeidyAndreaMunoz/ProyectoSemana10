@@ -8,6 +8,11 @@
       padding-bottom: 70%;
   }
 }
+
+.textContainer{
+  color: black;
+}
+
 h2 {
   text-align: center;
   color: white;
